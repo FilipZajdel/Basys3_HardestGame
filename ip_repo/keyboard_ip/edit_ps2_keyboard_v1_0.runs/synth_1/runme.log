@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log ps2_keyboard_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ps2_keyboard_v1_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ps2_keyboard_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/filip/Projects/xilinx/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/filip/Projects/xilinx/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/filip/Projects/xilinx/ip_repo/edit_ps2_keyboard_v1_0.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0.v:]
+Command: synth_design -top ps2_keyboard_v1_0 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18648 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1385.246 ; gain = 6.891 ; free physical = 3978 ; free virtual = 10024
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard_v1_0' [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard_v1_0_S00_AXI' [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:235]
+INFO: [Synth 8-226] default block is never used [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:376]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/src/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/src/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/src/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/src/PS2Receiver.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (2#1) [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/src/PS2Receiver.v:23]
+WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:427]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:227]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard_v1_0_S00_AXI' (3#1) [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard_v1_0' (4#1) [/home/filip/Projects/xilinx/ip_repo/ps2_keyboard_1.0/hdl/ps2_keyboard_v1_0.v:4]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1429.996 ; gain = 51.641 ; free physical = 3988 ; free virtual = 10025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1429.996 ; gain = 51.641 ; free physical = 4019 ; free virtual = 10051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1438.000 ; gain = 59.645 ; free physical = 4017 ; free virtual = 10050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1455.023 ; gain = 76.668 ; free physical = 3962 ; free virtual = 9999
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module ps2_keyboard_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design ps2_keyboard_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[0]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[1]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[2]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[3]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[4]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[5]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[6]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/uut/dataprev_reg[7]' (FDE) to 'ps2_keyboard_v1_0_S00_AXI_inst/uut/keycode_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'ps2_keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ps2_keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'ps2_keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'ps2_keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ps2_keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3693 ; free virtual = 9739
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3680 ; free virtual = 9723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3676 ; free virtual = 9720
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3667 ; free virtual = 9708
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3667 ; free virtual = 9708
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3668 ; free virtual = 9709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3668 ; free virtual = 9709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3664 ; free virtual = 9706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3665 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     4|
+|4     |LUT2   |     9|
+|5     |LUT3   |     4|
+|6     |LUT4   |    36|
+|7     |LUT5   |    22|
+|8     |LUT6   |    25|
+|9     |FDRE   |   167|
+|10    |FDSE   |     1|
+|11    |IBUF   |    50|
+|12    |OBUF   |    49|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |   372|
+|2     |  ps2_keyboard_v1_0_S00_AXI_inst |ps2_keyboard_v1_0_S00_AXI |   270|
+|3     |    uut                          |PS2Receiver               |    93|
+|4     |      db_clk                     |debouncer                 |    15|
+|5     |      db_data                    |debouncer_0               |    16|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3664 ; free virtual = 9706
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.156 ; gain = 194.801 ; free physical = 3663 ; free virtual = 9705
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.164 ; gain = 194.801 ; free physical = 3663 ; free virtual = 9705
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.168 ; gain = 0.000 ; free physical = 3461 ; free virtual = 9603
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1666.168 ; gain = 287.922 ; free physical = 3518 ; free virtual = 9660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.168 ; gain = 0.000 ; free physical = 3518 ; free virtual = 9660
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/filip/Projects/xilinx/ip_repo/edit_ps2_keyboard_v1_0.runs/synth_1/ps2_keyboard_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ps2_keyboard_v1_0_utilization_synth.rpt -pb ps2_keyboard_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 23:50:16 2019...

@@ -1,0 +1,3 @@
+[submodule "vivado/microblaze_VGA/microblaze_VGA.sdk/hardest_game/src/HardestGame"]
+	path = vivado/microblaze_VGA/microblaze_VGA.sdk/hardest_game/src/HardestGame
+	url = https://github.com/FilipZajdel/HardestGame

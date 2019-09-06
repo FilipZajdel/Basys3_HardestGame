@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+// Vivado v2018.3 (64-bit)
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Created on Thursday September 05, 2019 - 11:50:57 pm, from:
+//
+//     Map file     - /home/filip/Projects/xilinx/microblaze_VGA/microblaze_VGA.srcs/sources_1/bd/microblaze_MCU/microblaze_MCU.bmm
+//     Data file(s) - /home/filip/Projects/xilinx/microblaze_VGA/microblaze_VGA.srcs/sources_1/bd/microblaze_MCU/ip/microblaze_MCU_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'microblaze_MCU_i_microblaze_0.microblaze_MCU_i_microblaze_0_local_memory_lmb_bram_128K_5_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

@@ -1,0 +1,10 @@
+#include "keyboard.h"
+
+
+
+status_code_t init_keyboard() {
+	volatile unsigned int * keyboard = (PS2_ADDR);
+}
+
+
+const keyboard_state_t get_keyboard_state();

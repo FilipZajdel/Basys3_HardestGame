@@ -1,0 +1,6 @@
+00:39:01 **** Incremental Build of configuration Debug for project vga_and_keyboard_test ****
+make all 
+make: Nothing to be done for 'all'.
+
+00:39:02 Build Finished (took 663ms)
+

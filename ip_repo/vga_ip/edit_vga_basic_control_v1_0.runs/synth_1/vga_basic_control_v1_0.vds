@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep  1 16:28:10 2019
+# Process ID: 21291
+# Current directory: /home/filip/fpga_design/ip_repo/edit_vga_basic_control_v1_0.runs/synth_1
+# Command line: vivado -log vga_basic_control_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_basic_control_v1_0.tcl
+# Log file: /home/filip/fpga_design/ip_repo/edit_vga_basic_control_v1_0.runs/synth_1/vga_basic_control_v1_0.vds
+# Journal file: /home/filip/fpga_design/ip_repo/edit_vga_basic_control_v1_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------

@@ -1,0 +1,54 @@
+/*
+ * keyboard.h
+ *
+ *  Created on: Sep 5, 2019
+ *      Author: root
+ */
+
+#ifndef SRC_KEYBOARD_H_
+#define SRC_KEYBOARD_H_
+
+#include <stdint.h>
+
+#include "errors.h"
+
+#define PS2_ADDR (0x44A10000)
+#define PS2_MAGIC_CODE (0xDEADFADE)
+
+typedef enum {
+	ARROW_UP,
+	ARROW_DOWN,
+	ARROW_RIGHT,
+	ARROW_LEFT,
+	SPACE,
+	ESC,
+	RETURN,
+	KEY_P,
+	KEY_R
+}keyboard_keys_t;
+
+typedef enum {
+	PRESSED,
+	RELEASED
+}key_state_t;
+
+typedef struct {
+	key_state_t key_state;
+	keyboard_keys_t key;
+}keyboard_state_t;
+
+/** @brief Initializes keyboard
+ *
+ * @return OK, on right initialization
+ * 		   ERR, on initialization problem
+ */
+status_code_t init_keyboard();
+
+/** @brief Checks for new keys pressed
+ *
+ * @return keyboard state
+ */
+const keyboard_state_t get_keyboard_state();
+
+
+#endif /* SRC_KEYBOARD_H_ */

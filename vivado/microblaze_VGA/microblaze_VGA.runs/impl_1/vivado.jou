@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Sep  6 10:08:21 2019
+# Process ID: 32623
+# Current directory: /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.runs/impl_1
+# Command line: vivado -log microblaze_MCU_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microblaze_MCU_wrapper.tcl -notrace
+# Log file: /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.runs/impl_1/microblaze_MCU_wrapper.vdi
+# Journal file: /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source microblaze_MCU_wrapper.tcl -notrace

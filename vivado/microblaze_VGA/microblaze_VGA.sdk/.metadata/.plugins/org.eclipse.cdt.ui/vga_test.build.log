@@ -1,0 +1,40 @@
+19:49:13 **** Build of configuration Debug for project vga_test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vga_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:4:18: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define VGA_ADDR (0x44a00000)
+                  ^
+../src/main.c:12:37: note: in expansion of macro 'VGA_ADDR'
+ volatile unsigned int * const vga = VGA_ADDR;
+                                     ^~~~~~~~
+../src/main.c:10:18: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_ADDR (0x44A10000)
+                  ^
+../src/main.c:13:37: note: in expansion of macro 'PS2_ADDR'
+ volatile unsigned int * const ps2 = PS2_ADDR;
+                                     ^~~~~~~~
+../src/main.c: In function 'VGA_blink':
+../src/main.c:4:18: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define VGA_ADDR (0x44a00000)
+                  ^
+../src/main.c:49:22: note: in expansion of macro 'VGA_ADDR'
+  unsigned int *vga = VGA_ADDR;
+                      ^~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2928	    268	   3108	   6304	   18a0	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+
+19:49:14 Build Finished (took 828ms)
+

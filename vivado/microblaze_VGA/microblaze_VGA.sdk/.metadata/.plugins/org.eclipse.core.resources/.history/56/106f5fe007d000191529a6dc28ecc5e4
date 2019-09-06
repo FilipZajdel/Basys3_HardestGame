@@ -1,0 +1,17 @@
+#include "keyboard.h"
+
+
+
+status_code_t init_keyboard() {
+	volatile unsigned int * keyboard = (PS2_ADDR);
+	status_code_t status_code = ERR;
+
+	if(keyboard[3] == PS2_MAGIC_CODE) {
+		return OK;
+	}
+
+	return status_code;
+}
+
+
+const keyboard_state_t get_keyboard_state();

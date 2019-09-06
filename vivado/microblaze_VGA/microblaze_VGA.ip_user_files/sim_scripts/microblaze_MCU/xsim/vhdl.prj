@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_microblaze_0_0/sim/microblaze_MCU_microblaze_0_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_dlmb_v10_0/sim/microblaze_MCU_dlmb_v10_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_ilmb_v10_0/sim/microblaze_MCU_ilmb_v10_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_dlmb_bram_if_cntlr_0/sim/microblaze_MCU_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_ilmb_bram_if_cntlr_0/sim/microblaze_MCU_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_mdm_1_0/sim/microblaze_MCU_mdm_1_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_rst_clk_wiz_1_100M_0/sim/microblaze_MCU_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/microblaze_MCU/ip/microblaze_MCU_rst_clk_wiz_1_40M_0/sim/microblaze_MCU_rst_clk_wiz_1_40M_0.vhd" \
+
+nosort

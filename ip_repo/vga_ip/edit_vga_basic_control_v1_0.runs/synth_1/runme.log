@@ -1,0 +1,12 @@
+
+*** Running vivado
+    with args -log vga_basic_control_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_basic_control_v1_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Abnormal program termination (11)
+Please check '/home/filip/fpga_design/ip_repo/edit_vga_basic_control_v1_0.runs/synth_1/hs_err_pid21291.log' for details

@@ -1,0 +1,17 @@
+#include "vga.h"
+
+void VGA_blink(uint8_t sec){
+	unsigned int *vga = VGA_ADDR;
+	vga[0] |= (1<<26);
+	UBLAZE_delay(sec*1000);
+	vga[0] &= ~(1<<26);
+	UBLAZE_delay(sec*1000);
+}
+
+void VGA_clean() {
+	for(int x=0; x<100; x++){
+		for(int y=0; y < 75; y++){
+			VGA_draw(x, y, BG_COLOR);
+		}
+	}
+}

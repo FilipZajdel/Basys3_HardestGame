@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.runs/synth_1'
+HD_PWD='/home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

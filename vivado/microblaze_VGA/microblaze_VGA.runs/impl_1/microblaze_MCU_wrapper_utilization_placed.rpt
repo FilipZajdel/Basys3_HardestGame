@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Fri Sep  6 10:10:05 2019
+| Date         : Fri Sep  6 12:19:09 2019
 | Host         : BoomBoom running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_utilization -file microblaze_MCU_wrapper_utilization_placed.rpt -pb microblaze_MCU_wrapper_utilization_placed.pb
 | Design       : microblaze_MCU_wrapper

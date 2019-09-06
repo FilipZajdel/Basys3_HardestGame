@@ -1,4 +1,51 @@
-
-**** Build of configuration Debug for project hardest_game ****
-
-Nothing to build for project hardest_game
+15:28:29 **** Incremental Build of configuration Debug for project hardest_game ****
+make all 
+Building file: ../src/game_view/game_view.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_view/game_view.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game_view/game_view.d" -MT"src/game_view/game_view.o" -o "src/game_view/game_view.o" "../src/game_view/game_view.c"
+Finished building: ../src/game_view/game_view.c
+ 
+Building file: ../src/HardestGame/config.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HardestGame/config.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HardestGame/config.d" -MT"src/HardestGame/config.o" -o "src/HardestGame/config.o" "../src/HardestGame/config.c"
+Finished building: ../src/HardestGame/config.c
+ 
+Building file: ../src/HardestGame/game.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HardestGame/game.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HardestGame/game.d" -MT"src/HardestGame/game.o" -o "src/HardestGame/game.o" "../src/HardestGame/game.c"
+Finished building: ../src/HardestGame/game.c
+ 
+Building file: ../src/HardestGame/level.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HardestGame/level.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HardestGame/level.d" -MT"src/HardestGame/level.o" -o "src/HardestGame/level.o" "../src/HardestGame/level.c"
+Finished building: ../src/HardestGame/level.c
+ 
+Building file: ../src/HardestGame/map.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HardestGame/map.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HardestGame/map.d" -MT"src/HardestGame/map.o" -o "src/HardestGame/map.o" "../src/HardestGame/map.c"
+Finished building: ../src/HardestGame/map.c
+ 
+Building file: ../src/HardestGame/shape.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HardestGame/shape.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HardestGame/shape.d" -MT"src/HardestGame/shape.o" -o "src/HardestGame/shape.o" "../src/HardestGame/shape.c"
+Finished building: ../src/HardestGame/shape.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../hardest_game_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: hardest_game.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hardest_game_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hardest_game.elf"  ./src/util/ublaze_util.o  ./src/game_view/game_view.o  ./src/drivers/keyboard.o ./src/drivers/vga.o  ./src/HardestGame/config.o ./src/HardestGame/entity.o ./src/HardestGame/game.o ./src/HardestGame/level.o ./src/HardestGame/map.o ./src/HardestGame/shape.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hardest_game.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size hardest_game.elf  |tee "hardest_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24424	   1952	  73840	 100216	  18778	hardest_game.elf
+Finished building: hardest_game.elf.size
+ 
+15:28:53 **** Incremental Build of configuration Debug for project hardest_game ****
+make all 
+make: Nothing to be done for 'all'.

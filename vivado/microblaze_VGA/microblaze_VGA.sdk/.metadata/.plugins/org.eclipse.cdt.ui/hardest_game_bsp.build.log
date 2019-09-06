@@ -1,4 +1,4 @@
-10:57:23 **** Build of project hardest_game_bsp ****
+12:28:42 **** Build of project hardest_game_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -13,10 +13,6 @@ make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=m
 Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling standalone
-inbyte.c: In function 'inbyte':
-inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
 microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
  #pragma message ("For the sleep routines, assembly instructions are used")
          ^~~~~~~
@@ -24,7 +20,10 @@ outbyte.c: In function 'outbyte':
 outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
  void outbyte(char c) {
                    ^
-mb-ar: creating ../../../lib/libxil.a
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 Running Make libs in microblaze_0/libsrc/ps2_keyboard_v1_0/src
 make -C microblaze_0/libsrc/ps2_keyboard_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling ps2_keyboard...
@@ -53,5 +52,5 @@ make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-g
 Compiling cpu
 Finished building libraries
 
-10:57:25 Build Finished (took 2s.380ms)
+12:28:44 Build Finished (took 2s.34ms)
 

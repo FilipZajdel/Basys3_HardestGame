@@ -68,17 +68,17 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.cache/wt [current_project]
-  set_property parent.project_path /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.xpr [current_project]
-  set_property ip_repo_paths /home/filip/Projects/xilinx/FPGA_GAME/ip_repo [current_project]
+  set_property webtalk.parent_dir /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.cache/wt [current_project]
+  set_property parent.project_path /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.xpr [current_project]
+  set_property ip_repo_paths /home/filip/Basys3_HardestGame/ip_repo [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.cache/ip [current_project]
+  set_property ip_output_repo /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.runs/synth_1/microblaze_MCU_wrapper.dcp
+  add_files -quiet /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.runs/synth_1/microblaze_MCU_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/filip/Projects/xilinx/FPGA_GAME/vivado/microblaze_VGA/microblaze_VGA.srcs/sources_1/bd/microblaze_MCU/microblaze_MCU.bd
+  add_files /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.srcs/sources_1/bd/microblaze_MCU/microblaze_MCU.bd
   set_param project.isImplRun false
   read_xdc /home/filip/Projects/xilinx/Basys3_Master.xdc
   set_param project.isImplRun true

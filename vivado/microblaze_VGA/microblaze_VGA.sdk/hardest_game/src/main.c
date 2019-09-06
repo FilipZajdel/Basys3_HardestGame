@@ -1,109 +1,31 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#include "HardestGame/components/game.h"
-#include "HardestGame/components/config.h"
+#include "HardestGame/config.h"
+#include "HardestGame/game.h"
 
-#include "keyboard.h"
+#include "drivers/keyboard.h"
+#include "drivers/vga.h"
 
-#define VGA_ADDR (0x44a00000)
-#define PLAYER_COLOR (0xF0F)
-#define OBSTACLE_COLOR (0x0FF)
-#define TRAP_COLOR (0xF00)
-#define SAFE_POINT_COLOR (0x0F0)
-#define BG_COLOR (0xFFA)
-
-volatile unsigned int * const vga = VGA_ADDR;
-
-void UBLAZE_delay(const int ms) {
-	for(int i=0; i<ms; i++)
-	for(int i=0; i<5000; i++){
-		;
-	}
-}
-
-void VGA_draw(unsigned char x, unsigned char y, uint16_t color) {
-	vga[0] = (1<<26) | ((x&0x7F)<<12) | (y&0x7F)<<19 |
-			(0xFFF&color);
-	vga[0] &= ~(1<<26);
-}
-
-void VGA_draw_rect(const uint8_t X, const uint8_t Y, const uint8_t WIDTH, const uint8_t HEIGHT,
-		int color){
-	for(uint8_t x = X; x<(X+WIDTH); x++) {
-		for (uint8_t y = Y; y<(Y+HEIGHT); y++){
-			VGA_draw(x, y, color);
-		}
-	}
-}
-
-int MATH_divide_positive_int(int divident, int divider) {
-	int quotient = divident;
-	int result = 0;
-
-	while(quotient>=divider) {
-		result++;
-		quotient -= divider;
-	}
-	return result;
-}
-
-void GAME_draw_map(struct map_field_t **map, const int map_x, const int map_y){
-	for(uint16_t y=0; y<map_y; y++){
-		for(uint16_t x=0; x<map_x; x++){
-			switch(map[y][x].type) {
-				case PLAYER:
-					VGA_draw_rect(y, x, RECTANGLE_WIDTH, RECTANGLE_HEIGHT, PLAYER_COLOR);
-					break;
-				case TRAP:
-					VGA_draw_rect(y, x, RECTANGLE_WIDTH, RECTANGLE_HEIGHT, TRAP_COLOR);
-					break;
-				case OBSTACLE:
-					VGA_draw_rect(y, x, RECTANGLE_WIDTH, RECTANGLE_HEIGHT, OBSTACLE_COLOR);
-					break;
-				case SAFE_POINT:
-					VGA_draw_rect(y, x, RECTANGLE_WIDTH, RECTANGLE_HEIGHT, SAFE_POINT_COLOR);
-					break;
-				default:
-					break;
-			}
-		}
-	}
-}
-
-void VGA_blink(uint8_t sec){
-	unsigned int *vga = VGA_ADDR;
-	vga[0] |= (1<<26);
-	UBLAZE_delay(sec*1000);
-	vga[0] &= ~(1<<26);
-	UBLAZE_delay(sec*1000);
-}
-
-void VGA_clean() {
-	for(int x=0; x<100; x++){
-		for(int y=0; y < 75; y++){
-			VGA_draw(x, y, BG_COLOR);
-		}
-	}
-}
+#include "util/ublaze_util.h"
+#include "game_view/game_view.h"
 
 int main() {
 	static struct game_t *game = (struct game_t*)0xDEAD;
-	game = game_make();
+	struct map_field_t **map = NULL;
 	int map_x=0, map_y=0;
 	enum player_move_t player_move = NONE;
 
+	game = game_make();
 	game->init(game);
 	game->update(game, NONE);
-	struct map_field_t **map = game->get_map(game, &map_x, &map_y);
+	map = game->get_map(game, &map_x, &map_y);
 	game->update(game, NONE);
 
-	GAME_draw_map(map, map_x, map_y);
-
 	while(1){
-		VGA_clean();
-		GAME_draw_map(map, map_x, map_y);
-		UBLAZE_delay(50);
+		vga_clean();
+		game_view_draw(map, map_x, map_y);
+		ublaze_delay(50);
 
 		if(keyboard_get_state().key_state == PRESSED) {
 			switch(keyboard_get_state().key){
@@ -126,9 +48,25 @@ int main() {
 		} else {
 			player_move = NONE;
 		}
+
+		switch(game->get_state(game)) {
+		case RUNNING:
+			break;
+		case GAME_OVER:
+			game->reset(game);
+		case LEVEL_CHANGED:
+			game->update(game, NONE);
+			map = game->get_map(game, &map_x, &map_y);
+			break;
+		default:
+			break;
+		}
+
 		game->update(game, player_move);
-		UBLAZE_delay(100);
+		ublaze_delay(100);
 	}
 }
+
+
 
 

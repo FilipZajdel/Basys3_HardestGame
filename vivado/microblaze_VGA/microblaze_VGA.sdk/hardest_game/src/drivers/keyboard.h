@@ -10,7 +10,7 @@
 
 #include <stdint.h>
 
-#include "errors.h"
+#include "../util/errors.h"
 
 #define PS2_ADDR (0x44A10000)
 #define PS2_MAGIC_CODE (0xDEADFADE)

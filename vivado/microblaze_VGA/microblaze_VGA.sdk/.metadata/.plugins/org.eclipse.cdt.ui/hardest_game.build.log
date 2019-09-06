@@ -1,4 +1,6 @@
+15:28:53 **** Incremental Build of configuration Debug for project hardest_game ****
+make all 
+make: Nothing to be done for 'all'.
 
-**** Build of configuration Debug for project hardest_game ****
+15:28:53 Build Finished (took 615ms)
 
-Nothing to build for project hardest_game

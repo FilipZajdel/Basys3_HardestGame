@@ -1,0 +1,13 @@
+#ifndef vga_h
+#define vga_h
+
+
+void VGA_blink(uint8_t sec);
+
+void VGA_clean();
+
+void VGA_draw(unsigned char x, unsigned char y, uint16_t color);
+
+void VGA_draw_rect(const uint8_t X, const uint8_t Y, const uint8_t WIDTH, const uint8_t HEIGHT,
+		int color);
+#endif

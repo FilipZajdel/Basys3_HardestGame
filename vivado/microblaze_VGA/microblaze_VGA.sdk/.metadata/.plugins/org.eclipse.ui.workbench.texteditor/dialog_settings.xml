@@ -2,22 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MATH_divide_positive_int" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="set_player_speed" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="MATH_divide_positive_int"/>
+			<item value="set_player_speed"/>
+			<item value="player_speed"/>
+			<item value="PLAYER_VELOCITY"/>
+			<item value="0"/>
+			<item value="KEY_R"/>
+			<item value="TRAPS_VELOCITY"/>
+			<item value="write_i"/>
+			<item value="write_g"/>
 		</list>
 		<list key="replacehistory">
+			<item value="PLAYER_SPEED"/>
+			<item value="KEY_ENTER"/>
+			<item value=""/>
+			<item value="5"/>
+			<item value="26"/>
+			<item value="46"/>
+			<item value="53"/>
+			<item value="66"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="334" key="DIALOG_WIDTH"/>
+		<item value="254" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="462" key="DIALOG_HEIGHT"/>
-		<item value="526" key="DIALOG_X_ORIGIN"/>
-		<item value="92" key="DIALOG_Y_ORIGIN"/>
+		<item value="382" key="DIALOG_HEIGHT"/>
+		<item value="1004" key="DIALOG_X_ORIGIN"/>
+		<item value="311" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

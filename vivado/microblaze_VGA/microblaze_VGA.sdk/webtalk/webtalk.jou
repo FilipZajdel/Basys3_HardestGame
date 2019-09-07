@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # 
-# Start of session at: Fri Sep  6 00:46:07 2019
-# Process ID: 32746
-# Current directory: /home/filip/Projects/xilinx/microblaze_VGA/microblaze_VGA.sdk/webtalk
+# Start of session at: Sun Sep  8 00:14:57 2019
+# Process ID: 2028
+# Current directory: /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/filip/Projects/xilinx/microblaze_VGA/microblaze_VGA.sdk/webtalk/webtalk.log
-# Journal file: /home/filip/Projects/xilinx/microblaze_VGA/microblaze_VGA.sdk/webtalk/webtalk.jou
+# Log file: /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/webtalk/webtalk.log
+# Journal file: /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

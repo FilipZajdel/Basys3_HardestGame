@@ -1,0 +1,20 @@
+/*
+ * info_screen.h
+ *
+ *  Created on: Sep 7, 2019
+ *      Author: root
+ */
+
+#ifndef SRC_SCREEN_SCREEN_H_
+#define SRC_SCREEN_SCREEN_H_
+
+#include "screen_builders.h"
+
+/** @brief Draws the screen to the vga */
+void screen_draw(screen_t *screen);
+
+
+
+
+
+#endif /* SRC_SCREEN_SCREEN_H_ */

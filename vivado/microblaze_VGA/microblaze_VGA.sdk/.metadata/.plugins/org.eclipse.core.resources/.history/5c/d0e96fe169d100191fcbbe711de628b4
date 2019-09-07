@@ -1,0 +1,17 @@
+/*
+ * info_screen.h
+ *
+ *  Created on: Sep 7, 2019
+ *      Author: root
+ */
+
+#ifndef SRC_SCREEN_SCREEN_H_
+#define SRC_SCREEN_SCREEN_H_
+
+#include "screen_builders.h"
+
+
+
+
+
+#endif /* SRC_SCREEN_SCREEN_H_ */

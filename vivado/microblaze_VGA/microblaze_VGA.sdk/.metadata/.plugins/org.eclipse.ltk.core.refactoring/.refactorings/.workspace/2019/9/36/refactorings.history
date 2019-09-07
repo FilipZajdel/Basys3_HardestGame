@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/vga_test" element2="/vga_test_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1567705772365"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/vga_test" element2="/vga_test_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1567705772365"/>&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/hardest_game/src/screen/difficulty_chooser.c" element2="/hardest_game/src/screen/difficulty_chooser.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1567858443079"/>
 </session>

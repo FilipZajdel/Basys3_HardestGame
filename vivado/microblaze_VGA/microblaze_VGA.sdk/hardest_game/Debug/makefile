@@ -9,6 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/util/subdir.mk
+-include src/screen/subdir.mk
 -include src/game_view/subdir.mk
 -include src/drivers/subdir.mk
 -include src/HardestGame/subdir.mk

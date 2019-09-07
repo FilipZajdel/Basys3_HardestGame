@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #define VGA_ADDR (0x44a00000)
-#define BG_COLOR (0xFFA)
+#define BG_COLOR (0x888)
 
 
 void vga_blink(uint8_t sec);

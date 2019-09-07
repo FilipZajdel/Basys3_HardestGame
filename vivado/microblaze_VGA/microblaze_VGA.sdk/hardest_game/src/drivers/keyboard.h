@@ -17,15 +17,12 @@
 
 /** @brief Key corresponds with PS2 codes */
 typedef enum {
-	ARROW_UP,
-	ARROW_DOWN,
-	ARROW_RIGHT,
-	ARROW_LEFT,
-	SPACE,
-	ESC,
-	RETURN,
-	KEY_P,
-	KEY_R,
+	KEY_ARROW_UP = 0x75,	// ignorning prefix e0
+	KEY_ARROW_DOWN = 0x72,  // ignorning prefix e0
+	KEY_ARROW_RIGHT = 0x74, // ignorning prefix e0
+	KEY_ARROW_LEFT = 0x6b, // ignorning prefix e0
+	KEY_ENTER = 0x5a, // ignorning prefix e0
+	KEY_R = 0x2d,
 	KEY_W = 0x1d,
 	KEY_S = 0x1b,
 	KEY_A = 0x1c,
@@ -55,5 +52,6 @@ status_code_t keyboard_init();
  */
 const keyboard_state_t keyboard_get_state();
 
+void keyboard_wait_key(keyboard_key_t);
 
 #endif /* SRC_KEYBOARD_H_ */

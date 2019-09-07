@@ -1,0 +1,28 @@
+/*
+ * screen_builders.h
+ *
+ *  Created on: Sep 7, 2019
+ *      Author: root
+ */
+
+#ifndef SRC_SCREEN_SCREEN_BUILDERS_H_
+#define SRC_SCREEN_SCREEN_BUILDERS_H_
+
+
+typedef struct {
+	const char *str;
+	uint8_t pos_x;
+	uint8_t pos_y;
+}caption_t;
+
+typedef struct {
+	union {
+	uint8_t pos_y;
+	uint8_t pos_x;
+	uint8_t dim_x;
+	uint8_t dim_y;
+	}''
+}rect_t;
+
+
+#endif /* SRC_SCREEN_SCREEN_BUILDERS_H_ */

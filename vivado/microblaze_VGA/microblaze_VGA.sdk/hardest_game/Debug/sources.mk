@@ -20,5 +20,6 @@ src/HardestGame \
 src/drivers \
 src/game_view \
 src \
+src/screen \
 src/util \
 

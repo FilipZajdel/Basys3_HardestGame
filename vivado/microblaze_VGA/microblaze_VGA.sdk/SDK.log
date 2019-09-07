@@ -5679,3 +5679,10 @@ con
 
 23:22:20 INFO  : Launch script is exported to file '/home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hardest_game.elf_on_local.tcl'
 00:14:55 INFO  : Disconnected from the channel tcfchan#102.
+00:25:55 INFO  : Registering command handlers for SDK TCF services
+00:25:57 INFO  : Launching XSCT server: xsct -n -interactive /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/temp_xsdb_launch_script.tcl
+00:26:01 INFO  : XSCT server has started successfully.
+00:26:01 INFO  : Successfully done setting XSCT server connection channel  
+00:26:01 INFO  : Processing command line option -hwspec /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper.hdf.
+00:26:03 INFO  : Successfully done setting SDK workspace  
+00:26:03 INFO  : Checking for hwspec changes in the project microblaze_MCU_wrapper_hw_platform_3.

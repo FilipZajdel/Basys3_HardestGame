@@ -1,0 +1,57 @@
+\hypertarget{structlevel__t}{}\section{level\+\_\+t Struct Reference}
+\label{structlevel__t}\index{level\+\_\+t@{level\+\_\+t}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum level\+\_\+states\+\_\+t($\ast$ {\bfseries get\+\_\+state} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$)\hypertarget{structlevel__t_a220cdf51d04a7a423b99f0d337c066b2}{}\label{structlevel__t_a220cdf51d04a7a423b99f0d337c066b2}
+
+\item 
+void($\ast$ {\bfseries update} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$, enum player\+\_\+move\+\_\+t)\hypertarget{structlevel__t_ac4dbbb1c4e8531e48ce85a14fa2f2374}{}\label{structlevel__t_ac4dbbb1c4e8531e48ce85a14fa2f2374}
+
+\item 
+enum level\+\_\+states\+\_\+t {\bfseries \+\_\+state}\hypertarget{structlevel__t_a26af37b0126367d71422c0a7d65c5fc2}{}\label{structlevel__t_a26af37b0126367d71422c0a7d65c5fc2}
+
+\item 
+struct \hyperlink{structentity__t}{entity\+\_\+t} $\ast$$\ast$ {\bfseries \+\_\+traps}\hypertarget{structlevel__t_a28adb32ee1921739f671dc78c9979e3b}{}\label{structlevel__t_a28adb32ee1921739f671dc78c9979e3b}
+
+\item 
+struct \hyperlink{structentity__t}{entity\+\_\+t} $\ast$$\ast$ {\bfseries \+\_\+obstacles}\hypertarget{structlevel__t_ab850ac2799f4cdede73f7029c8708f7c}{}\label{structlevel__t_ab850ac2799f4cdede73f7029c8708f7c}
+
+\item 
+struct \hyperlink{structentity__t}{entity\+\_\+t} $\ast$ {\bfseries \+\_\+player}\hypertarget{structlevel__t_aaf9e8e5ea8e9c17be8519d6485fb8be3}{}\label{structlevel__t_aaf9e8e5ea8e9c17be8519d6485fb8be3}
+
+\item 
+struct \hyperlink{structentity__t}{entity\+\_\+t} $\ast$ {\bfseries \+\_\+safe\+\_\+point}\hypertarget{structlevel__t_a2fd281c1438e51d8f23555a25e555b4d}{}\label{structlevel__t_a2fd281c1438e51d8f23555a25e555b4d}
+
+\item 
+struct \hyperlink{structlevel__config__t}{level\+\_\+config\+\_\+t} $\ast$ {\bfseries \+\_\+config}\hypertarget{structlevel__t_a6f73c3ccae1254dbee52d46d9f633f50}{}\label{structlevel__t_a6f73c3ccae1254dbee52d46d9f633f50}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+traps\+\_\+number}\hypertarget{structlevel__t_afe48bbd9058a3ac7ab4b79ccb885dcfe}{}\label{structlevel__t_afe48bbd9058a3ac7ab4b79ccb885dcfe}
+
+\item 
+void($\ast$ {\bfseries map\+\_\+update} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$)\hypertarget{structlevel__t_aaeb4f8d72599f896fdfcc35664d8bb57}{}\label{structlevel__t_aaeb4f8d72599f896fdfcc35664d8bb57}
+
+\item 
+struct \hyperlink{structentity__t}{entity\+\_\+t} $\ast$($\ast$ \hyperlink{structlevel__t_aaffeed5326370cd0b642502aeb23d6e3}{\+\_\+get\+\_\+collision} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$l)
+\item 
+void($\ast$ \hyperlink{structlevel__t_a9f0b48b9b539ac2b3eef575ed9654479}{\+\_\+update\+\_\+map} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$)\hypertarget{structlevel__t_a9f0b48b9b539ac2b3eef575ed9654479}{}\label{structlevel__t_a9f0b48b9b539ac2b3eef575ed9654479}
+
+\begin{DoxyCompactList}\small\item\em Updates the map. \end{DoxyCompactList}\item 
+void($\ast$ {\bfseries \+\_\+determine\+\_\+trap\+\_\+direction} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$l, int $\ast$dx, int $\ast$dy, int trap\+\_\+idx)\hypertarget{structlevel__t_aac841473df735c9213664d23c618da6e}{}\label{structlevel__t_aac841473df735c9213664d23c618da6e}
+
+\item 
+void($\ast$ {\bfseries \+\_\+update\+\_\+player} )(struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$l, enum player\+\_\+move\+\_\+t move)\hypertarget{structlevel__t_a05348823440a8f8a3977c0f050862e87}{}\label{structlevel__t_a05348823440a8f8a3977c0f050862e87}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{level\+\_\+t@{level\+\_\+t}!\+\_\+get\+\_\+collision@{\+\_\+get\+\_\+collision}}
+\index{\+\_\+get\+\_\+collision@{\+\_\+get\+\_\+collision}!level\+\_\+t@{level\+\_\+t}}
+\subsubsection[{\texorpdfstring{\+\_\+get\+\_\+collision}{_get_collision}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf entity\+\_\+t}$\ast$($\ast$ level\+\_\+t\+::\+\_\+get\+\_\+collision) (struct {\bf level\+\_\+t} $\ast$l)}\hypertarget{structlevel__t_aaffeed5326370cd0b642502aeb23d6e3}{}\label{structlevel__t_aaffeed5326370cd0b642502aeb23d6e3}
+Checks for collision between entities. Returns ptr to collided entity, if there is no collision returns N\+U\+LL 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Hardest\+Game/level.\+h\end{DoxyCompactItemize}

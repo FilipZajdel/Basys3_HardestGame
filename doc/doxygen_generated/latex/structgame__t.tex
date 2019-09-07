@@ -1,0 +1,56 @@
+\hypertarget{structgame__t}{}\section{game\+\_\+t Struct Reference}
+\label{structgame__t}\index{game\+\_\+t@{game\+\_\+t}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ {\bfseries init} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game)\hypertarget{structgame__t_a6eeeedf44cd55461d5d5a7a701110611}{}\label{structgame__t_a6eeeedf44cd55461d5d5a7a701110611}
+
+\item 
+void($\ast$ {\bfseries reset} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game)\hypertarget{structgame__t_ab95cfede154ea708d2c01be106bf3116}{}\label{structgame__t_ab95cfede154ea708d2c01be106bf3116}
+
+\item 
+void($\ast$ \hyperlink{structgame__t_aa163bbf56e62507ceff2c39cbffe301b}{update} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game, enum player\+\_\+move\+\_\+t)\hypertarget{structgame__t_aa163bbf56e62507ceff2c39cbffe301b}{}\label{structgame__t_aa163bbf56e62507ceff2c39cbffe301b}
+
+\begin{DoxyCompactList}\small\item\em Updates state of the game for given player movement. \end{DoxyCompactList}\item 
+enum game\+\_\+state\+\_\+t($\ast$ {\bfseries get\+\_\+state} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game)\hypertarget{structgame__t_ae441c1398379541b60807795fd269a1c}{}\label{structgame__t_ae441c1398379541b60807795fd269a1c}
+
+\item 
+struct \hyperlink{structmap__field__t}{map\+\_\+field\+\_\+t} $\ast$$\ast$($\ast$ \hyperlink{structgame__t_a41d009bbe7b429a2657d012b94778c92}{get\+\_\+map} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game, int $\ast$width, int $\ast$height)
+\begin{DoxyCompactList}\small\item\em Returns map and its dimensions. \end{DoxyCompactList}\item 
+int($\ast$ \hyperlink{structgame__t_ad13e2c09f4e825c907f6294eb4a50557}{get\+\_\+current\+\_\+level} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$game)\hypertarget{structgame__t_ad13e2c09f4e825c907f6294eb4a50557}{}\label{structgame__t_ad13e2c09f4e825c907f6294eb4a50557}
+
+\begin{DoxyCompactList}\small\item\em Returns level of the game. \end{DoxyCompactList}\item 
+struct \hyperlink{structlevel__t}{level\+\_\+t} $\ast$ {\bfseries \+\_\+level}\hypertarget{structgame__t_a357dd2fe41126434f531d1fd8bd064a7}{}\label{structgame__t_a357dd2fe41126434f531d1fd8bd064a7}
+
+\item 
+int {\bfseries \+\_\+level\+\_\+idx}\hypertarget{structgame__t_a3788d1b245b0326eb47c82ab7ab6e6f9}{}\label{structgame__t_a3788d1b245b0326eb47c82ab7ab6e6f9}
+
+\item 
+enum game\+\_\+state\+\_\+t {\bfseries \+\_\+state}\hypertarget{structgame__t_a086cad569db999ecae4e3e25778c0ccf}{}\label{structgame__t_a086cad569db999ecae4e3e25778c0ccf}
+
+\item 
+void($\ast$ {\bfseries \+\_\+init\+\_\+level\+\_\+by\+\_\+idx} )(struct \hyperlink{structgame__t}{game\+\_\+t} $\ast$self)\hypertarget{structgame__t_ae15cc566b3e1de9680832db2d071ebbd}{}\label{structgame__t_ae15cc566b3e1de9680832db2d071ebbd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{game\+\_\+t@{game\+\_\+t}!get\+\_\+map@{get\+\_\+map}}
+\index{get\+\_\+map@{get\+\_\+map}!game\+\_\+t@{game\+\_\+t}}
+\subsubsection[{\texorpdfstring{get\+\_\+map}{get_map}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf map\+\_\+field\+\_\+t}$\ast$$\ast$($\ast$ game\+\_\+t\+::get\+\_\+map) (struct {\bf game\+\_\+t} $\ast$game, int $\ast$width, int $\ast$height)}\hypertarget{structgame__t_a41d009bbe7b429a2657d012b94778c92}{}\label{structgame__t_a41d009bbe7b429a2657d012b94778c92}
+
+
+Returns map and its dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & pointer to variable that will be filled with value of width of the map \\
+\hline
+{\em height} & pointer to variable that will be filled with value of height of the map \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Hardest\+Game/game.\+h\end{DoxyCompactItemize}

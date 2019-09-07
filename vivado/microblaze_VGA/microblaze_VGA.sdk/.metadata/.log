@@ -3431,3 +3431,138 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-73
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:14:55.165
 !MESSAGE XSCT command with result: [disconnect tcfchan#102], Result: [null, ]. Thread: Thread-9543
+!SESSION 2019-09-08 00:25:46.925 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk
+
+!ENTRY org.eclipse.ui 2 0 2019-09-08 00:25:49.635
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-09-08 00:25:49.635
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-09-08 00:25:50.541
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-09-08 00:25:50.541
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.627
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.627
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.631
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.744
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.745
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:01.746
+!MESSAGE XSCT Command: [setws /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.509
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.509
+!MESSAGE XSCT command with result: [setws /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.511
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.514
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "microblaze_MCU_i/microblaze_0:microblaze_MCU_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.516
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.522
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Result: [null, {"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"ps2_keyboard_0": {"hier_name": "ps2_keyboard_0",
+"type": "ps2_keyboard",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_40M": {"hier_name": "rst_clk_wiz_1_40M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"vga_basic_control_0": {"hier_name": "vga_basic_control_0",
+"type": "vga_basic_control",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.567
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.569
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Thu Sep  5 23:50:46 2019",
+"vivado_version": "2018.3",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.792
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_3/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-09-08 00:26:03.859
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/filip/Basys3_HardestGame/vivado/microblaze_VGA/microblaze_VGA.sdk/microblaze_MCU_wrapper_hw_platform_3/system.hdf], Result: [null, ]. Thread: main

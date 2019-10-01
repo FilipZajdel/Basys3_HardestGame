@@ -1,5 +1,7 @@
 # Hardest Game on FPGA
 
+[![Video Image](http://img.youtube.com/vi/xOzMxzHZh6M/0.jpg)](https://www.youtube.com/watch?v=xOzMxzHZh6M)
+
 ## Table of content
 [Overview](#overview) <br>
 [Cloning project](#cloning-project) <br>
